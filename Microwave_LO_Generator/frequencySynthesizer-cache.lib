@@ -1,0 +1,318 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Device_C
+#
+DEF Device_C C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "Device_C" 25 -100 50 H V L CNN
+F2 "" 38 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_LED
+#
+DEF Device_LED D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "Device_LED" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ LED*
+ LED_SMD:*
+ LED_THT:*
+$ENDFPLIST
+DRAW
+P 2 0 1 10 -50 -50 -50 50 N
+P 2 0 1 0 -50 0 50 0 N
+P 4 0 1 10 50 -50 50 50 -50 0 50 -50 N
+P 5 0 1 0 -120 -30 -180 -90 -150 -90 -180 -90 -180 -60 N
+P 5 0 1 0 -70 -30 -130 -90 -100 -90 -130 -90 -130 -60 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_R
+#
+DEF Device_R R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "Device_R" 0 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -40 -100 40 100 0 1 10 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Regulator_Linear_LM317L_SO8
+#
+DEF Regulator_Linear_LM317L_SO8 U 0 10 Y Y 1 F N
+F0 "U" -150 125 50 H V C CNN
+F1 "Regulator_Linear_LM317L_SO8" 0 125 50 H V L CNN
+F2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" 0 200 50 H I C CIN
+F3 "" 0 -200 50 H I C CNN
+$FPLIST
+ SOIC*3.9x4.9mm*P1.27mm*
+$ENDFPLIST
+DRAW
+S -200 75 200 -200 0 1 10 f
+X VI 1 -300 0 100 R 50 50 1 1 W
+X VO 2 300 0 100 L 50 50 1 1 w
+X VO 3 300 0 100 L 50 50 1 1 P N
+X ADJ 4 0 -300 100 U 50 50 1 1 I
+X NC 5 -300 -100 100 R 50 50 1 1 N N
+X VO 6 300 0 100 L 50 50 1 1 P N
+X VO 7 300 0 100 L 50 50 1 1 P N
+X NC 8 300 -100 100 L 50 50 1 1 N N
+ENDDRAW
+ENDDEF
+#
+# frequencySynthesizer-rescue_ADF4150HV-frequencySintesizer
+#
+DEF frequencySynthesizer-rescue_ADF4150HV-frequencySintesizer U 0 40 Y Y 1 F N
+F0 "U" 0 -100 50 H V C CNN
+F1 "frequencySynthesizer-rescue_ADF4150HV-frequencySintesizer" 0 50 50 H V C CNN
+F2 "Package_CSP:LFCSP-32-1EP_5x5mm_P0.5mm_EP3.25x3.25mm" 0 0 50 H I C CNN
+F3 "" -300 0 50 H I C CNN
+DRAW
+S -600 750 550 -700 0 1 0 f
+X GND 1 -100 -800 100 U 50 50 1 1 P
+X CPGND 10 0 -800 100 U 50 50 1 1 P
+X AVDD 11 -150 850 100 D 50 50 1 1 W
+X GND 12 -100 -800 100 U 50 50 1 1 P N
+X AVDD 13 -150 850 100 D 50 50 1 1 W N
+X RFINA 14 -700 -300 100 R 50 50 1 1 I
+X RFINB 15 -700 -400 100 R 50 50 1 1 I
+X GND 16 -100 -800 100 U 50 50 1 1 P N
+X GND 17 -100 -800 100 U 50 50 1 1 P N
+X RFOUTB 18 650 -300 100 L 50 50 1 1 O
+X RFOUTA 19 650 -200 100 L 50 50 1 1 O
+X CLK 2 -700 600 100 R 50 50 1 1 I
+X AVDD 20 -150 850 100 D 50 50 1 1 W N
+X PDBRF 21 -700 100 100 R 50 50 1 1 I
+X DVDD 22 -50 850 100 D 50 50 1 1 W
+X GND 23 -100 -800 100 U 50 50 1 1 P N
+X GND 24 -100 -800 100 U 50 50 1 1 P N
+X REFIN 25 -700 -100 100 R 50 50 1 1 I
+X LD 26 650 0 100 L 50 50 1 1 O
+X MUXOUT 27 650 200 100 L 50 50 1 1 O
+X SDVDD 28 50 850 100 D 50 50 1 1 W
+X SDGND 29 100 -800 100 U 50 50 1 1 P
+X DATA 3 -700 500 100 R 50 50 1 1 I
+X GND 30 -100 -800 100 U 50 50 1 1 P N
+X RSET 31 -700 -600 100 R 50 50 1 1 P
+X GND 32 -100 -800 100 U 50 50 1 1 P N
+X LE 4 -700 400 100 R 50 50 1 1 I
+X CE 5 -700 200 100 R 50 50 1 1 I
+X VP 6 150 850 100 D 50 50 1 1 W
+X GND 7 -100 -800 100 U 50 50 1 1 P N
+X GND 8 -100 -800 100 U 50 50 1 1 P N
+X CPOUT 9 650 400 100 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# frequencySynthesizer-rescue_BNC_THT-frequencySintesizer
+#
+DEF frequencySynthesizer-rescue_BNC_THT-frequencySintesizer J 0 40 Y N 1 F N
+F0 "J" 10 120 50 H V C CNN
+F1 "frequencySynthesizer-rescue_BNC_THT-frequencySintesizer" 115 0 50 V V C CNN
+F2 "Connector_Coaxial:BNC_Amphenol_B6252HB-NPP3G-50_Horizontal" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "5227161-1" 0 0 50 H I C CNN "Manufacturer/Part Number"
+F5 "Mouser 571-5227161-1" 0 0 50 H I C CNN "Supplier Stock Code"
+$FPLIST
+ *BNC*
+ *SMA*
+ *SMB*
+ *SMC*
+ *Cinch*
+$ENDFPLIST
+DRAW
+A -2 0 71 1636 0 0 1 10 N -70 20 70 0
+A -1 0 71 0 -1638 0 1 10 N 70 0 -70 -20
+C 0 0 20 0 1 8 N
+P 2 0 1 0 -100 0 -20 0 N
+P 2 0 1 0 0 -100 0 -70 N
+X In 1 -200 0 100 R 50 50 1 1 P
+X Ext 2 0 -200 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# frequencySynthesizer-rescue_IQXT-220-1-frequencySintesizer
+#
+DEF frequencySynthesizer-rescue_IQXT-220-1-frequencySintesizer X 0 40 Y Y 1 F N
+F0 "X" 100 -350 50 H V C CNN
+F1 "frequencySynthesizer-rescue_IQXT-220-1-frequencySintesizer" 100 400 50 H V C CNN
+F2 "Oscillator:Oscillator_SMD_Abracon_ASE-4Pin_3.2x2.5mm_HandSoldering" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -200 250 200 -250 0 1 0 f
+X NC 1 -300 0 100 R 50 50 1 1 N
+X GND 2 0 -350 100 U 50 50 1 1 P
+X OUT 3 300 0 100 L 50 50 1 1 O
+X Vs 4 0 350 100 D 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# frequencySynthesizer-rescue_SMA_END-frequencySintesizer
+#
+DEF frequencySynthesizer-rescue_SMA_END-frequencySintesizer J 0 40 Y N 1 F N
+F0 "J" 10 120 50 H V C CNN
+F1 "frequencySynthesizer-rescue_SMA_END-frequencySintesizer" 115 0 50 V V C CNN
+F2 "Connector_Coaxial:SMA_Molex_73251-1153_EdgeMount_Horizontal" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "142-0701-851" 0 0 50 H I C CNN "Manufacturer/Part Number"
+F5 "Mouser 530-142-0701-851" 0 0 50 H I C CNN "Supplier Stock Code"
+$FPLIST
+ *BNC*
+ *SMA*
+ *SMB*
+ *SMC*
+ *Cinch*
+$ENDFPLIST
+DRAW
+A -2 0 71 1636 0 0 1 10 N -70 20 70 0
+A -1 0 71 0 -1638 0 1 10 N 70 0 -70 -20
+C 0 0 20 0 1 8 N
+P 2 0 1 0 -100 0 -20 0 N
+P 2 0 1 0 0 -100 0 -70 N
+X In 1 -200 0 100 R 50 50 1 1 P
+X Ext 2 0 -200 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# frequencySynthesizer-rescue_TestPoint-frequencySintesizer
+#
+DEF frequencySynthesizer-rescue_TestPoint-frequencySintesizer TP 0 30 N N 1 F N
+F0 "TP" 0 300 50 H V C CNN
+F1 "frequencySynthesizer-rescue_TestPoint-frequencySintesizer" 0 200 50 H V C CNN
+F2 "TestPoint:TestPoint_Loop_D2.60mm_Drill1.6mm_Beaded" 200 0 50 H I C CNN
+F3 "" 200 0 50 H I C CNN
+F4 "5007" 0 0 50 H I C CNN "Manufacturer/Part Number"
+F5 "Mouser 534-5007" 0 0 50 H I C CNN "Supplier Code"
+$FPLIST
+ Pin*
+ Test*
+$ENDFPLIST
+DRAW
+C 0 130 30 0 1 0 N
+X 1 1 0 0 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# power_+12V
+#
+DEF power_+12V #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+12V" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +12V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_+3.3V
+#
+DEF power_+3.3V #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+3.3V" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+ALIAS +3.3V
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +3V3 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_+9V
+#
+DEF power_+9V #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+9V" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +9V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_GND
+#
+DEF power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_PWR_FLAG
+#
+DEF power_PWR_FLAG #FLG 0 0 N N 1 F P
+F0 "#FLG" 0 75 50 H I C CNN
+F1 "power_PWR_FLAG" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 50 -40 75 0 100 40 75 0 50 N
+X pwr 1 0 0 0 U 50 50 0 0 w
+ENDDRAW
+ENDDEF
+#
+# pspice_0
+#
+DEF pspice_0 #GND 0 0 Y Y 1 F P
+F0 "#GND" 0 -100 50 H I C CNN
+F1 "pspice_0" 0 -70 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 4 0 1 0 -50 0 0 -50 50 0 -50 0 N
+X 0 1 0 0 0 R 40 40 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# pspice_DIODE
+#
+DEF pspice_DIODE D 0 40 Y N 1 F N
+F0 "D" 0 150 50 H V C CNN
+F1 "pspice_DIODE" 0 -175 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 75 100 75 -100 N
+P 3 0 1 0 -75 100 -75 -100 75 0 F
+X K 1 -200 0 150 R 50 50 1 1 I
+X A 2 200 0 150 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library

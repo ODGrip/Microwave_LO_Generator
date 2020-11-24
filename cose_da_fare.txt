@@ -1,0 +1,4 @@
+- Scegliere i diodi di protezione
+- Scegliere un LED
+- Modificare i valori dei resistori
+- Scegliere se inserire dei resitori all'ingresso dei regolatori di tensione e tra il pin VIN e EN dell'ADP150

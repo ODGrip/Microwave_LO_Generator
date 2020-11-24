@@ -1,0 +1,137 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# ADF4150HV-frequencySintesizer
+#
+DEF ADF4150HV-frequencySintesizer U 0 40 Y Y 1 F N
+F0 "U" 0 -100 50 H V C CNN
+F1 "ADF4150HV-frequencySintesizer" 0 50 50 H V C CNN
+F2 "Package_CSP:LFCSP-32-1EP_5x5mm_P0.5mm_EP3.25x3.25mm" 0 0 50 H I C CNN
+F3 "" -300 0 50 H I C CNN
+DRAW
+S -600 750 550 -700 0 1 0 f
+X GND 1 -100 -800 100 U 50 50 1 1 P
+X CPGND 10 0 -800 100 U 50 50 1 1 P
+X AVDD 11 -150 850 100 D 50 50 1 1 W
+X GND 12 -100 -800 100 U 50 50 1 1 P N
+X AVDD 13 -150 850 100 D 50 50 1 1 W N
+X RFINA 14 -700 -300 100 R 50 50 1 1 I
+X RFINB 15 -700 -400 100 R 50 50 1 1 I
+X GND 16 -100 -800 100 U 50 50 1 1 P N
+X GND 17 -100 -800 100 U 50 50 1 1 P N
+X RFOUTB 18 650 -300 100 L 50 50 1 1 O
+X RFOUTA 19 650 -200 100 L 50 50 1 1 O
+X CLK 2 -700 600 100 R 50 50 1 1 I
+X AVDD 20 -150 850 100 D 50 50 1 1 W N
+X PDBRF 21 -700 100 100 R 50 50 1 1 I
+X DVDD 22 -50 850 100 D 50 50 1 1 W
+X GND 23 -100 -800 100 U 50 50 1 1 P N
+X GND 24 -100 -800 100 U 50 50 1 1 P N
+X REFIN 25 -700 -100 100 R 50 50 1 1 I
+X LD 26 650 0 100 L 50 50 1 1 O
+X MUXOUT 27 650 200 100 L 50 50 1 1 O
+X SDVDD 28 50 850 100 D 50 50 1 1 W
+X SDGND 29 100 -800 100 U 50 50 1 1 P
+X DATA 3 -700 500 100 R 50 50 1 1 I
+X GND 30 -100 -800 100 U 50 50 1 1 P N
+X RSET 31 -700 -600 100 R 50 50 1 1 P
+X GND 32 -100 -800 100 U 50 50 1 1 P N
+X LE 4 -700 400 100 R 50 50 1 1 I
+X CE 5 -700 200 100 R 50 50 1 1 I
+X VP 6 150 850 100 D 50 50 1 1 W
+X GND 7 -100 -800 100 U 50 50 1 1 P N
+X GND 8 -100 -800 100 U 50 50 1 1 P N
+X CPOUT 9 650 400 100 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# BNC_THT-frequencySintesizer
+#
+DEF BNC_THT-frequencySintesizer J 0 40 Y N 1 F N
+F0 "J" 10 120 50 H V C CNN
+F1 "BNC_THT-frequencySintesizer" 115 0 50 V V C CNN
+F2 "Connector_Coaxial:BNC_Amphenol_B6252HB-NPP3G-50_Horizontal" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "5227161-1" 0 0 50 H I C CNN "Manufacturer/Part Number"
+F5 "Mouser 571-5227161-1" 0 0 50 H I C CNN "Supplier Stock Code"
+$FPLIST
+ *BNC*
+ *SMA*
+ *SMB*
+ *SMC*
+ *Cinch*
+$ENDFPLIST
+DRAW
+A -2 0 71 1636 0 0 1 10 N -70 20 70 0
+A -1 0 71 0 -1638 0 1 10 N 70 0 -70 -20
+C 0 0 20 0 1 8 N
+P 2 0 1 0 -100 0 -20 0 N
+P 2 0 1 0 0 -100 0 -70 N
+X In 1 -200 0 100 R 50 50 1 1 P
+X Ext 2 0 -200 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# IQXT-220-1-frequencySintesizer
+#
+DEF IQXT-220-1-frequencySintesizer X 0 40 Y Y 1 F N
+F0 "X" 100 -350 50 H V C CNN
+F1 "IQXT-220-1-frequencySintesizer" 100 400 50 H V C CNN
+F2 "Oscillator:Oscillator_SMD_Abracon_ASE-4Pin_3.2x2.5mm_HandSoldering" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -200 250 200 -250 0 1 0 f
+X NC 1 -300 0 100 R 50 50 1 1 N
+X GND 2 0 -350 100 U 50 50 1 1 P
+X OUT 3 300 0 100 L 50 50 1 1 O
+X Vs 4 0 350 100 D 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# SMA_END-frequencySintesizer
+#
+DEF SMA_END-frequencySintesizer J 0 40 Y N 1 F N
+F0 "J" 10 120 50 H V C CNN
+F1 "SMA_END-frequencySintesizer" 115 0 50 V V C CNN
+F2 "Connector_Coaxial:SMA_Molex_73251-1153_EdgeMount_Horizontal" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "142-0701-851" 0 0 50 H I C CNN "Manufacturer/Part Number"
+F5 "Mouser 530-142-0701-851" 0 0 50 H I C CNN "Supplier Stock Code"
+$FPLIST
+ *BNC*
+ *SMA*
+ *SMB*
+ *SMC*
+ *Cinch*
+$ENDFPLIST
+DRAW
+A -2 0 71 1636 0 0 1 10 N -70 20 70 0
+A -1 0 71 0 -1638 0 1 10 N 70 0 -70 -20
+C 0 0 20 0 1 8 N
+P 2 0 1 0 -100 0 -20 0 N
+P 2 0 1 0 0 -100 0 -70 N
+X In 1 -200 0 100 R 50 50 1 1 P
+X Ext 2 0 -200 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# TestPoint-frequencySintesizer
+#
+DEF TestPoint-frequencySintesizer TP 0 30 N N 1 F N
+F0 "TP" 0 300 50 H V C CNN
+F1 "TestPoint-frequencySintesizer" 0 200 50 H V C CNN
+F2 "TestPoint:TestPoint_Loop_D2.60mm_Drill1.6mm_Beaded" 200 0 50 H I C CNN
+F3 "" 200 0 50 H I C CNN
+F4 "5007" 0 0 50 H I C CNN "Manufacturer/Part Number"
+F5 "Mouser 534-5007" 0 0 50 H I C CNN "Supplier Code"
+$FPLIST
+ Pin*
+ Test*
+$ENDFPLIST
+DRAW
+C 0 130 30 0 1 0 N
+X 1 1 0 0 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library

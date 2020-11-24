@@ -1,0 +1,33 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ADF4150HV
+D 0.5-3.0GHz High Voltage integer/fractional-N Frequency Synthesizer, LFCSP-32
+K High Voltage PLL
+F https://www.analog.com/media/en/technical-documentation/data-sheets/ADF4150HV.pdf
+$ENDCMP
+#
+$CMP BNC_THT
+D TE Connectivity BNC connector for PCB, THT mounting, 50 Ohm
+K BNC
+F https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=5227161&DocType=Customer+Drawing&DocLang=English&PartCntxt=5227161-1&DocFormat=pdf
+$ENDCMP
+#
+$CMP IQXT-220-1
+D TCXO SMD 10MHz
+K TCXO SMD 10MHz
+F https://www.mouser.it/datasheet/2/741/LFTCXO075792Cutt-1115708.pdf
+$ENDCMP
+#
+$CMP SMA_END
+D coaxial connector SMA Johnson
+K SMA coaxial connector
+F https://www.mouser.it/datasheet/2/643/pi-CCS-JOHN-142-0701-851-1290383.pdf
+$ENDCMP
+#
+$CMP TestPoint
+D test point Keystone Electronics
+K test point tp
+F https://www.mouser.it/datasheet/2/215/005-5009-741293.pdf
+$ENDCMP
+#
+#End Doc Library
