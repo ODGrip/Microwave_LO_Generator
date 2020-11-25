@@ -1,4 +1,10 @@
-- Scegliere i diodi di protezione
-- Scegliere un LED
 - Modificare i valori dei resistori
 - Scegliere se inserire dei resitori all'ingresso dei regolatori di tensione e tra il pin VIN e EN dell'ADP150
+- Inserire DRC
+- Scegliere adeguatamente dimensioni di pista e via
+- Inserire piani di massa e via in modo da avere una GCPW
+- Ritoccare le alimentazioni, al momento il VCO ha bisogno di 5 Volt "digitali" per far funzionare il prescaler e non è stato inserito un regolatore per ottenerli
+Visto che l'idea base era quella di usare 2 alimentazioni:
+- 12V per i circuiti analogici
+- 5V per i circuiti digitali
+Si potrebbe pensare di utilizzare direttamente i 5V in ingresso senza un regolatore ma inserendo qualche condensatore
