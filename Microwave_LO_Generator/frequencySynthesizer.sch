@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 3
+Sheet 2 4
 Title "Frequency Synthesizer"
 Date ""
 Rev ""
@@ -13,19 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L frequencySynthesizer-rescue:ADF4150HV-frequencySintesizer U1
-U 1 1 5FB4AD4B
-P 5400 4000
-F 0 "U1" H 5375 3111 50  0000 C CNN
-F 1 "ADF4150HV" H 5375 3020 50  0000 C CNN
-F 2 "Package_CSP:LFCSP-32-1EP_5x5mm_P0.5mm_EP3.25x3.25mm" H 5400 4000 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADF4150HV.pdf" H 5100 4000 50  0001 C CNN
-F 4 "ADF4150HVBCPZ" H 5400 4000 50  0001 C CNN "Manufacturer/Part Number"
-F 5 "Mouser 584-ADF4150HVBCPZ" H 5400 4000 50  0001 C CNN "Supplier Stock Code"
-	1    5400 4000
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5FB4D6D2
@@ -261,29 +248,6 @@ F 4 "GRM1555C2A100GA01D" H 6150 2850 50  0001 C CNN "Manufacturer/Part Number"
 F 5 "Mouser 81-GRM1555C2A100GA1D" H 6150 2850 50  0001 C CNN "Supplier Stock Code"
 	1    6150 2850
 	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R3
-U 1 1 5FB92F8C
-P 4600 4850
-F 0 "R3" H 4670 4896 50  0000 L CNN
-F 1 "4.64k" H 4670 4805 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 4530 4850 50  0001 C CNN
-F 3 "~" H 4600 4850 50  0001 C CNN
-F 4 "D/CRCW0402 kit in dipartimento" H 4600 4850 50  0001 C CNN "Supplier Stock Code"
-	1    4600 4850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0112
-U 1 1 5FB93D5F
-P 4600 5000
-F 0 "#PWR0112" H 4600 4750 50  0001 C CNN
-F 1 "GND" H 4605 4827 50  0000 C CNN
-F 2 "" H 4600 5000 50  0001 C CNN
-F 3 "" H 4600 5000 50  0001 C CNN
-	1    4600 5000
-	1    0    0    -1  
 $EndComp
 $Comp
 L frequencySynthesizer-rescue:IQXT-220-1-frequencySintesizer X1
@@ -549,8 +513,6 @@ Wire Wire Line
 Wire Wire Line
 	4150 3900 4150 2750
 Wire Wire Line
-	4600 4700 4600 4600
-Wire Wire Line
 	4600 4600 4700 4600
 $Comp
 L Device:R R5
@@ -662,15 +624,13 @@ Wire Wire Line
 	7600 3600 7750 3600
 Connection ~ 7750 3600
 Wire Wire Line
-	7750 3600 8350 3600
+	7750 3600 8100 3600
 Wire Wire Line
 	6050 4000 6250 4000
 Wire Wire Line
 	6250 4000 6250 4550
 Wire Wire Line
 	6250 4550 6900 4550
-Wire Wire Line
-	4700 4300 4250 4300
 Wire Wire Line
 	4700 4400 4300 4400
 Wire Wire Line
@@ -704,8 +664,6 @@ Wire Wire Line
 	6050 3800 6300 3800
 Wire Wire Line
 	6300 3800 6300 4450
-Wire Wire Line
-	6300 4450 8350 4450
 $Comp
 L Device:LED D1
 U 1 1 5FBC845E
@@ -731,39 +689,7 @@ F 3 "" H 6900 5150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5300 4800 5400 4800
-Wire Wire Line
 	5800 4800 5800 4900
-Connection ~ 5400 4800
-Wire Wire Line
-	5400 4800 5500 4800
-Connection ~ 5500 4800
-Wire Wire Line
-	5500 4800 5800 4800
-$Comp
-L frequencySynthesizer-rescue:SMA_END-frequencySintesizer J3
-U 1 1 5FBCFA7F
-P 8550 3600
-F 0 "J3" H 8650 3575 50  0000 L CNN
-F 1 "SMA_END" H 8650 3484 50  0000 L CNN
-F 2 "Connector_Coaxial:SMA_Molex_73251-1153_EdgeMount_Horizontal" H 8550 3600 50  0001 C CNN
-F 3 "https://www.mouser.it/datasheet/2/643/pi-CCS-JOHN-142-0701-851-1290383.pdf" H 8550 3600 50  0001 C CNN
-F 4 "142-0701-851" H 8550 3600 50  0001 C CNN "Manufacturer/Part Number"
-F 5 "Mouser 530-142-0701-851" H 8550 3600 50  0001 C CNN "Supplier Stock Code"
-	1    8550 3600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0123
-U 1 1 5FBD07F2
-P 8550 3800
-F 0 "#PWR0123" H 8550 3550 50  0001 C CNN
-F 1 "GND" H 8555 3627 50  0000 C CNN
-F 2 "" H 8550 3800 50  0001 C CNN
-F 3 "" H 8550 3800 50  0001 C CNN
-	1    8550 3800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3400 2750 4150 2750
 $Comp
@@ -793,48 +719,44 @@ $EndComp
 $Comp
 L Device:C C5
 U 1 1 5FBE3534
-P 3800 5100
-F 0 "C5" V 3650 5150 50  0000 R CNN
-F 1 "100p" V 3550 5200 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 3838 4950 50  0001 C CNN
-F 3 "~" H 3800 5100 50  0001 C CNN
-F 4 "GCM1555C1H101JA16D" H 3800 5100 50  0001 C CNN "Manufacturer/Part Number"
-F 5 "Mouser 81-GCM1555C1H101JA6D" H 3800 5100 50  0001 C CNN "Supplier Stock Code"
-	1    3800 5100
+P 3250 5150
+F 0 "C5" V 3100 5200 50  0000 R CNN
+F 1 "100p" V 3000 5250 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 3288 5000 50  0001 C CNN
+F 3 "~" H 3250 5150 50  0001 C CNN
+F 4 "GCM1555C1H101JA16D" H 3250 5150 50  0001 C CNN "Manufacturer/Part Number"
+F 5 "Mouser 81-GCM1555C1H101JA6D" H 3250 5150 50  0001 C CNN "Supplier Stock Code"
+	1    3250 5150
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	3550 5100 3650 5100
+	3000 5150 3100 5150
 Wire Wire Line
 	4300 4400 4300 5150
 $Comp
 L frequencySynthesizer-rescue:SMA_END-frequencySintesizer J2
 U 1 1 5FBFBE98
-P 3350 5100
-F 0 "J2" H 3278 5338 50  0000 C CNN
-F 1 "SMA_END" H 3278 5247 50  0000 C CNN
-F 2 "Connector_Coaxial:SMA_Molex_73251-1153_EdgeMount_Horizontal" H 3350 5100 50  0001 C CNN
-F 3 "https://www.mouser.it/datasheet/2/643/pi-CCS-JOHN-142-0701-851-1290383.pdf" H 3350 5100 50  0001 C CNN
-F 4 "142-0701-851" H 3350 5100 50  0001 C CNN "Manufacturer/Part Number"
-F 5 "Mouser 530-142-0701-851" H 3350 5100 50  0001 C CNN "Supplier Stock Code"
-	1    3350 5100
+P 2800 5150
+F 0 "J2" H 2728 5388 50  0000 C CNN
+F 1 "SMA_END" H 2728 5297 50  0000 C CNN
+F 2 "Connector_Coaxial:SMA_Molex_73251-1153_EdgeMount_Horizontal" H 2800 5150 50  0001 C CNN
+F 3 "https://www.mouser.it/datasheet/2/643/pi-CCS-JOHN-142-0701-851-1290383.pdf" H 2800 5150 50  0001 C CNN
+F 4 "142-0701-851" H 2800 5150 50  0001 C CNN "Manufacturer/Part Number"
+F 5 "Mouser 530-142-0701-851" H 2800 5150 50  0001 C CNN "Supplier Stock Code"
+	1    2800 5150
 	-1   0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0125
 U 1 1 5FBFF905
-P 3350 5300
-F 0 "#PWR0125" H 3350 5050 50  0001 C CNN
-F 1 "GND" H 3355 5127 50  0000 C CNN
-F 2 "" H 3350 5300 50  0001 C CNN
-F 3 "" H 3350 5300 50  0001 C CNN
-	1    3350 5300
+P 2800 5350
+F 0 "#PWR0125" H 2800 5100 50  0001 C CNN
+F 1 "GND" H 2805 5177 50  0000 C CNN
+F 2 "" H 2800 5350 50  0001 C CNN
+F 3 "" H 2800 5350 50  0001 C CNN
+	1    2800 5350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4250 4300 4250 5100
-Wire Wire Line
-	3950 5100 4250 5100
 $Comp
 L power:GND #PWR0126
 U 1 1 5FBDA100
@@ -893,4 +815,98 @@ Connection ~ 5850 2050
 Connection ~ 5550 2050
 Wire Wire Line
 	5550 2050 5550 3150
+$Comp
+L power:GND #PWR0123
+U 1 1 5FBD07F2
+P 8550 3800
+F 0 "#PWR0123" H 8550 3550 50  0001 C CNN
+F 1 "GND" H 8555 3627 50  0000 C CNN
+F 2 "" H 8550 3800 50  0001 C CNN
+F 3 "" H 8550 3800 50  0001 C CNN
+	1    8550 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L frequencySynthesizer-rescue:SMA_END-frequencySintesizer J3
+U 1 1 5FBCFA7F
+P 8550 3600
+F 0 "J3" H 8650 3575 50  0000 L CNN
+F 1 "SMA_END" H 8650 3484 50  0000 L CNN
+F 2 "Connector_Coaxial:SMA_Molex_73251-1153_EdgeMount_Horizontal" H 8550 3600 50  0001 C CNN
+F 3 "https://www.mouser.it/datasheet/2/643/pi-CCS-JOHN-142-0701-851-1290383.pdf" H 8550 3600 50  0001 C CNN
+F 4 "142-0701-851" H 8550 3600 50  0001 C CNN "Manufacturer/Part Number"
+F 5 "Mouser 530-142-0701-851" H 8550 3600 50  0001 C CNN "Supplier Stock Code"
+	1    8550 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 3600 8100 3400
+Connection ~ 8100 3600
+Wire Wire Line
+	8100 3600 8350 3600
+Text GLabel 8100 3400 0    50   Input ~ 0
+CPout
+Wire Wire Line
+	4150 4300 4700 4300
+Wire Wire Line
+	4150 4300 4150 5150
+Wire Wire Line
+	3400 5150 3650 5150
+NoConn ~ 8300 3600
+NoConn ~ 3450 5150
+Text GLabel 3650 4950 0    50   Input ~ 0
+DIV16
+Wire Wire Line
+	3650 4950 3650 5150
+Connection ~ 3650 5150
+Wire Wire Line
+	3650 5150 4150 5150
+Wire Wire Line
+	5500 4800 5800 4800
+Connection ~ 5500 4800
+Connection ~ 5400 4800
+Wire Wire Line
+	5400 4800 5500 4800
+Wire Wire Line
+	5300 4800 5400 4800
+Wire Wire Line
+	6300 4450 8350 4450
+Wire Wire Line
+	4600 4700 4600 4600
+$Comp
+L power:GND #PWR0112
+U 1 1 5FB93D5F
+P 4600 5000
+F 0 "#PWR0112" H 4600 4750 50  0001 C CNN
+F 1 "GND" H 4605 4827 50  0000 C CNN
+F 2 "" H 4600 5000 50  0001 C CNN
+F 3 "" H 4600 5000 50  0001 C CNN
+	1    4600 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5FB92F8C
+P 4600 4850
+F 0 "R3" H 4670 4896 50  0000 L CNN
+F 1 "4.64k" H 4670 4805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 4530 4850 50  0001 C CNN
+F 3 "~" H 4600 4850 50  0001 C CNN
+F 4 "D/CRCW0402 kit in dipartimento" H 4600 4850 50  0001 C CNN "Supplier Stock Code"
+	1    4600 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L frequencySynthesizer-rescue:ADF4150HV-frequencySintesizer U1
+U 1 1 5FB4AD4B
+P 5400 4000
+F 0 "U1" H 5375 3111 50  0000 C CNN
+F 1 "ADF4150HV" H 5375 3020 50  0000 C CNN
+F 2 "Package_CSP:LFCSP-32-1EP_5x5mm_P0.5mm_EP3.25x3.25mm" H 5400 4000 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADF4150HV.pdf" H 5100 4000 50  0001 C CNN
+F 4 "ADF4150HVBCPZ" H 5400 4000 50  0001 C CNN "Manufacturer/Part Number"
+F 5 "Mouser 584-ADF4150HVBCPZ" H 5400 4000 50  0001 C CNN "Supplier Stock Code"
+	1    5400 4000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
