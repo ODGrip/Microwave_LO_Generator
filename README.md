@@ -1,2 +1,2 @@
 # Microwave_LO_Generator
-24.5 GHz LO generator
+23.3 GHz - 26.3 GHz LO generator
