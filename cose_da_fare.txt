@@ -8,3 +8,4 @@ Visto che l'idea base era quella di usare 2 alimentazioni:
 - 12V per i circuiti analogici
 - 5V per i circuiti digitali
 Si potrebbe pensare di utilizzare direttamente i 5V in ingresso senza un regolatore ma inserendo qualche condensatore
+- Ragionare su PDBRF e su MUXOUT

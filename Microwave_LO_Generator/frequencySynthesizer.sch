@@ -62,17 +62,6 @@ Wire Wire Line
 Wire Wire Line
 	2500 1350 2500 1500
 $Comp
-L power:+3.3V #PWR0103
-U 1 1 5FB52FA7
-P 5250 2550
-F 0 "#PWR0103" H 5250 2400 50  0001 C CNN
-F 1 "+3.3V" H 5265 2723 50  0000 C CNN
-F 2 "" H 5250 2550 50  0001 C CNN
-F 3 "" H 5250 2550 50  0001 C CNN
-	1    5250 2550
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+9V #PWR0104
 U 1 1 5FB54FB2
 P 5550 1950
@@ -160,8 +149,6 @@ $EndComp
 Wire Wire Line
 	5450 2450 5450 2700
 Wire Wire Line
-	5250 2550 5250 2700
-Wire Wire Line
 	5350 2700 5450 2700
 Connection ~ 5450 2700
 $Comp
@@ -208,7 +195,6 @@ F 3 "" H 6150 3000 50  0001 C CNN
 	1    6150 3000
 	1    0    0    -1  
 $EndComp
-Connection ~ 5250 2700
 Wire Wire Line
 	5250 2700 5250 3150
 Connection ~ 4950 2700
@@ -935,4 +921,100 @@ Wire Wire Line
 	2950 1050 3200 1050
 Wire Wire Line
 	3200 1050 3200 1100
+$Comp
+L pspice:0 #GND0122
+U 1 1 5FCD8892
+P 3750 1600
+F 0 "#GND0122" H 3750 1500 50  0001 C CNN
+F 1 "0" H 3750 1689 50  0000 C CNN
+F 2 "" H 3750 1600 50  0001 C CNN
+F 3 "~" H 3750 1600 50  0001 C CNN
+	1    3750 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 1500 3750 1600
+$Comp
+L Connector:Conn_01x05_Male J4
+U 1 1 5FCD328E
+P 3150 1800
+F 0 "J4" H 3258 2181 50  0000 C CNN
+F 1 "Conn_01x05_Male" H 3258 2090 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 3150 1800 50  0001 C CNN
+F 3 "~" H 3150 1800 50  0001 C CNN
+	1    3150 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 1500 3500 1600
+Wire Wire Line
+	3500 1600 3350 1600
+Wire Wire Line
+	3500 1500 3750 1500
+$Comp
+L Device:R R17
+U 1 1 5FD3B0E5
+P 3400 3000
+F 0 "R17" H 3470 3046 50  0000 L CNN
+F 1 "DNI" H 3470 2955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3330 3000 50  0001 C CNN
+F 3 "~" H 3400 3000 50  0001 C CNN
+F 4 "D/CRCW0402 kit in dipartimento" H 3400 3000 50  0001 C CNN "Supplier Stock Code"
+	1    3400 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 3150 3400 3300
+Wire Wire Line
+	3400 2750 3400 2850
+$Comp
+L Device:R R16
+U 1 1 5FD46A04
+P 3400 2600
+F 0 "R16" H 3470 2646 50  0000 L CNN
+F 1 "0" H 3470 2555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 3330 2600 50  0001 C CNN
+F 3 "~" H 3400 2600 50  0001 C CNN
+F 4 "D/CRCW0402 kit in dipartimento" H 3400 2600 50  0001 C CNN "Supplier Stock Code"
+	1    3400 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:0 #GND0123
+U 1 1 5FD49CF4
+P 3400 3300
+F 0 "#GND0123" H 3400 3200 50  0001 C CNN
+F 1 "0" H 3400 3389 50  0000 C CNN
+F 2 "" H 3400 3300 50  0001 C CNN
+F 3 "~" H 3400 3300 50  0001 C CNN
+	1    3400 3300
+	1    0    0    -1  
+$EndComp
+Connection ~ 5250 2700
+Wire Wire Line
+	5250 2550 5250 2700
+$Comp
+L power:+3.3V #PWR0103
+U 1 1 5FB52FA7
+P 5250 2550
+F 0 "#PWR0103" H 5250 2400 50  0001 C CNN
+F 1 "+3.3V" H 5265 2723 50  0000 C CNN
+F 2 "" H 5250 2550 50  0001 C CNN
+F 3 "" H 5250 2550 50  0001 C CNN
+	1    5250 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0138
+U 1 1 5FD4CD79
+P 3400 2300
+F 0 "#PWR0138" H 3400 2150 50  0001 C CNN
+F 1 "+3.3V" H 3415 2473 50  0000 C CNN
+F 2 "" H 3400 2300 50  0001 C CNN
+F 3 "" H 3400 2300 50  0001 C CNN
+	1    3400 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 2300 3400 2450
 $EndSCHEMATC
