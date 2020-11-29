@@ -313,4 +313,19 @@ Wire Wire Line
 Connection ~ 1900 1650
 Wire Wire Line
 	1900 1650 1800 1650
+$Comp
+L Connector:Conn_01x01_Female J5
+U 1 1 5FC15527
+P 6450 2700
+F 0 "J5" H 6478 2726 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 6478 2635 50  0000 L CNN
+F 2 "Microwave_LO_Generator:Connettore" H 6450 2700 50  0001 C CNN
+F 3 "~" H 6450 2700 50  0001 C CNN
+	1    6450 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 2150 6250 2150
+Wire Wire Line
+	6250 2150 6250 2700
 $EndSCHEMATC
