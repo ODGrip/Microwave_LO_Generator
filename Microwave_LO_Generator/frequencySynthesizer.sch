@@ -431,45 +431,6 @@ Wire Wire Line
 	3850 4100 3850 4000
 Wire Wire Line
 	3850 4100 4700 4100
-$Comp
-L Device:C C3
-U 1 1 5FBBE9A1
-P 2650 4500
-F 0 "C3" V 2398 4500 50  0000 C CNN
-F 1 "1n" V 2489 4500 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 2688 4350 50  0001 C CNN
-F 3 "~" H 2650 4500 50  0001 C CNN
-F 4 "GRM1555C1H102FA01D" H 2650 4500 50  0001 C CNN "Manufacturer/Part Number"
-F 5 "Mouser 81-GRM1555C1H102FA1D" H 2650 4500 50  0001 C CNN "Supplier Stock Code"
-	1    2650 4500
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2150 4500 2500 4500
-$Comp
-L power:GND #PWR0118
-U 1 1 5FB92468
-P 1950 4700
-F 0 "#PWR0118" H 1950 4450 50  0001 C CNN
-F 1 "GND" H 1955 4527 50  0000 C CNN
-F 2 "" H 1950 4700 50  0001 C CNN
-F 3 "" H 1950 4700 50  0001 C CNN
-	1    1950 4700
-	1    0    0    -1  
-$EndComp
-$Comp
-L frequencySynthesizer-rescue:BNC_THT-frequencySintesizer J1
-U 1 1 5FB9ABFC
-P 1950 4500
-F 0 "J1" H 1878 4738 50  0000 C CNN
-F 1 "BNC_THT" H 1878 4647 50  0000 C CNN
-F 2 "Connector_Coaxial:BNC_Amphenol_B6252HB-NPP3G-50_Horizontal" H 1950 4500 50  0001 C CNN
-F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=5227161&DocType=Customer+Drawing&DocLang=English&PartCntxt=5227161-1&DocFormat=pdf" H 1950 4500 50  0001 C CNN
-F 4 "5227161-1" H 1950 4500 50  0001 C CNN "Manufacturer/Part Number"
-F 5 "Mouser 571-5227161-1" H 1950 4500 50  0001 C CNN "Supplier Stock Code"
-	1    1950 4500
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	4700 3400 4350 3400
 Wire Wire Line
@@ -702,47 +663,8 @@ F 3 "" H 4300 5450 50  0001 C CNN
 	1    4300 5450
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C C5
-U 1 1 5FBE3534
-P 3250 5150
-F 0 "C5" V 3100 5200 50  0000 R CNN
-F 1 "100p" V 3000 5250 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 3288 5000 50  0001 C CNN
-F 3 "~" H 3250 5150 50  0001 C CNN
-F 4 "GCM1555C1H101JA16D" H 3250 5150 50  0001 C CNN "Manufacturer/Part Number"
-F 5 "Mouser 81-GCM1555C1H101JA6D" H 3250 5150 50  0001 C CNN "Supplier Stock Code"
-	1    3250 5150
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3000 5150 3100 5150
 Wire Wire Line
 	4300 4400 4300 5150
-$Comp
-L frequencySynthesizer-rescue:SMA_END-frequencySintesizer J2
-U 1 1 5FBFBE98
-P 2800 5150
-F 0 "J2" H 2728 5388 50  0000 C CNN
-F 1 "SMA_END" H 2728 5297 50  0000 C CNN
-F 2 "Connector_Coaxial:SMA_Molex_73251-1153_EdgeMount_Horizontal" H 2800 5150 50  0001 C CNN
-F 3 "https://www.mouser.it/datasheet/2/643/pi-CCS-JOHN-142-0701-851-1290383.pdf" H 2800 5150 50  0001 C CNN
-F 4 "142-0701-851" H 2800 5150 50  0001 C CNN "Manufacturer/Part Number"
-F 5 "Mouser 530-142-0701-851" H 2800 5150 50  0001 C CNN "Supplier Stock Code"
-	1    2800 5150
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0125
-U 1 1 5FBFF905
-P 2800 5350
-F 0 "#PWR0125" H 2800 5100 50  0001 C CNN
-F 1 "GND" H 2805 5177 50  0000 C CNN
-F 2 "" H 2800 5350 50  0001 C CNN
-F 3 "" H 2800 5350 50  0001 C CNN
-	1    2800 5350
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0126
 U 1 1 5FBDA100
@@ -801,35 +723,8 @@ Connection ~ 5850 2050
 Connection ~ 5550 2050
 Wire Wire Line
 	5550 2050 5550 3150
-$Comp
-L power:GND #PWR0123
-U 1 1 5FBD07F2
-P 8550 3800
-F 0 "#PWR0123" H 8550 3550 50  0001 C CNN
-F 1 "GND" H 8555 3627 50  0000 C CNN
-F 2 "" H 8550 3800 50  0001 C CNN
-F 3 "" H 8550 3800 50  0001 C CNN
-	1    8550 3800
-	1    0    0    -1  
-$EndComp
-$Comp
-L frequencySynthesizer-rescue:SMA_END-frequencySintesizer J3
-U 1 1 5FBCFA7F
-P 8550 3600
-F 0 "J3" H 8650 3575 50  0000 L CNN
-F 1 "SMA_END" H 8650 3484 50  0000 L CNN
-F 2 "Connector_Coaxial:SMA_Molex_73251-1153_EdgeMount_Horizontal" H 8550 3600 50  0001 C CNN
-F 3 "https://www.mouser.it/datasheet/2/643/pi-CCS-JOHN-142-0701-851-1290383.pdf" H 8550 3600 50  0001 C CNN
-F 4 "142-0701-851" H 8550 3600 50  0001 C CNN "Manufacturer/Part Number"
-F 5 "Mouser 530-142-0701-851" H 8550 3600 50  0001 C CNN "Supplier Stock Code"
-	1    8550 3600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8100 3600 8100 3400
-Connection ~ 8100 3600
-Wire Wire Line
-	8100 3600 8350 3600
 Text GLabel 8100 3400 0    50   Input ~ 0
 CPout
 Wire Wire Line
@@ -838,7 +733,6 @@ Wire Wire Line
 	4150 4300 4150 5150
 Wire Wire Line
 	3400 5150 3650 5150
-NoConn ~ 8300 3600
 NoConn ~ 3450 5150
 Text GLabel 3650 4950 0    50   Input ~ 0
 DIV16
