@@ -1,0 +1,14 @@
+Charge-Pump
+9V - 2.5 mA
+
+PLL Synthesizer
+3.3V - 60 mA
+
+VCO 
+5V - 110 mA
+
+VCO Prescaler
+5V - 110mA
+
+Consensatore 4.7uF 16V
+0402YD475MAT2A

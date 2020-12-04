@@ -201,35 +201,6 @@ Wire Wire Line
 Wire Wire Line
 	2900 800  2900 1450
 $Comp
-L power:GND #PWR?
-U 1 1 5FBFDBC7
-P 2650 2550
-AR Path="/5FBD30A7/5FBFDBC7" Ref="#PWR?"  Part="1" 
-AR Path="/5FC49510/5FBFDBC7" Ref="#PWR0136"  Part="1" 
-F 0 "#PWR0136" H 2650 2300 50  0001 C CNN
-F 1 "GND" H 2655 2377 50  0000 C CNN
-F 2 "" H 2650 2550 50  0001 C CNN
-F 3 "" H 2650 2550 50  0001 C CNN
-	1    2650 2550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5FBFDBCE
-P 2650 2400
-AR Path="/5FBD30A7/5FBFDBCE" Ref="R?"  Part="1" 
-AR Path="/5FC49510/5FBFDBCE" Ref="R15"  Part="1" 
-F 0 "R15" H 2720 2446 50  0000 L CNN
-F 1 "51r" H 2720 2355 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 2580 2400 50  0001 C CNN
-F 3 "~" H 2650 2400 50  0001 C CNN
-F 4 "D/CRCW0402 kit in dipartimento" H 2650 2400 50  0001 C CNN "Supplier Stock Code"
-	1    2650 2400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2650 2250 3200 2250
-$Comp
 L power:+5VA #PWR0135
 U 1 1 5FC78F40
 P 6950 1550
@@ -328,4 +299,99 @@ Wire Wire Line
 	5400 2150 6250 2150
 Wire Wire Line
 	6250 2150 6250 2700
+$Comp
+L power:GND #PWR?
+U 1 1 5FCBE930
+P 1900 3150
+AR Path="/5FBD30A7/5FCBE930" Ref="#PWR?"  Part="1" 
+AR Path="/5FC49510/5FCBE930" Ref="#PWR0123"  Part="1" 
+F 0 "#PWR0123" H 1900 2900 50  0001 C CNN
+F 1 "GND" H 1905 2977 50  0000 C CNN
+F 2 "" H 1900 3150 50  0001 C CNN
+F 3 "" H 1900 3150 50  0001 C CNN
+	1    1900 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FCBE937
+P 1900 3000
+AR Path="/5FBD30A7/5FCBE937" Ref="R?"  Part="1" 
+AR Path="/5FC49510/5FCBE937" Ref="R9"  Part="1" 
+F 0 "R9" H 1970 3046 50  0000 L CNN
+F 1 "100r" H 1970 2955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" V 1830 3000 50  0001 C CNN
+F 3 "~" H 1900 3000 50  0001 C CNN
+F 4 "D/CRCW0402 kit in dipartimento" H 1900 3000 50  0001 C CNN "Supplier Stock Code"
+	1    1900 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FBFDBCE
+P 2300 3000
+AR Path="/5FBD30A7/5FBFDBCE" Ref="R?"  Part="1" 
+AR Path="/5FC49510/5FBFDBCE" Ref="R15"  Part="1" 
+F 0 "R15" H 2370 3046 50  0000 L CNN
+F 1 "100r" H 2370 2955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" V 2230 3000 50  0001 C CNN
+F 3 "~" H 2300 3000 50  0001 C CNN
+F 4 "D/CRCW0402 kit in dipartimento" H 2300 3000 50  0001 C CNN "Supplier Stock Code"
+	1    2300 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FBFDBC7
+P 2300 3150
+AR Path="/5FBD30A7/5FBFDBC7" Ref="#PWR?"  Part="1" 
+AR Path="/5FC49510/5FBFDBC7" Ref="#PWR0136"  Part="1" 
+F 0 "#PWR0136" H 2300 2900 50  0001 C CNN
+F 1 "GND" H 2305 2977 50  0000 C CNN
+F 2 "" H 2300 3150 50  0001 C CNN
+F 3 "" H 2300 3150 50  0001 C CNN
+	1    2300 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J3
+U 1 1 5FCC0BE0
+P 1100 2750
+F 0 "J3" H 1128 2776 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 1128 2685 50  0000 L CNN
+F 2 "Microwave_LO_Generator:Connettore" H 1100 2750 50  0001 C CNN
+F 3 "~" H 1100 2750 50  0001 C CNN
+	1    1100 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FCC18F4
+P 1550 2750
+AR Path="/5FBD30A7/5FCC18F4" Ref="R?"  Part="1" 
+AR Path="/5FC49510/5FCC18F4" Ref="R7"  Part="1" 
+F 0 "R7" H 1620 2796 50  0000 L CNN
+F 1 "0r" H 1620 2705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" V 1480 2750 50  0001 C CNN
+F 3 "~" H 1550 2750 50  0001 C CNN
+F 4 "D/CRCW0402 kit in dipartimento" H 1550 2750 50  0001 C CNN "Supplier Stock Code"
+	1    1550 2750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1300 2750 1400 2750
+Wire Wire Line
+	1900 2750 1900 2850
+Wire Wire Line
+	2300 2850 2300 2750
+Wire Wire Line
+	1700 2750 1900 2750
+Connection ~ 1900 2750
+Wire Wire Line
+	1900 2750 2300 2750
+Wire Wire Line
+	2300 2750 2300 2250
+Wire Wire Line
+	2300 2250 3200 2250
+Connection ~ 2300 2750
 $EndSCHEMATC
