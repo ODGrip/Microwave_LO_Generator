@@ -365,11 +365,6 @@ Wire Wire Line
 	3150 3950 3150 4100
 Wire Wire Line
 	3150 4100 3350 4100
-Wire Wire Line
-	3150 4100 3150 4500
-Wire Wire Line
-	3150 4500 2950 4500
-Connection ~ 3150 4100
 $Comp
 L Device:R R2
 U 1 1 5FBABF78
@@ -396,39 +391,19 @@ $EndComp
 Wire Wire Line
 	3850 4200 3850 4100
 Connection ~ 3850 4100
-Connection ~ 2950 4500
-Wire Wire Line
-	2950 4500 2800 4500
-Wire Wire Line
-	2950 4500 2950 4550
-$Comp
-L frequencySynthesizer-rescue:TestPoint-frequencySintesizer TP2
-U 1 1 5FBBB2E0
-P 3850 4000
-F 0 "TP2" H 3908 4118 50  0000 L CNN
-F 1 "TestPoint" H 3908 4027 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Loop_D2.60mm_Drill1.6mm_Beaded" H 4050 4000 50  0001 C CNN
-F 3 "https://www.mouser.it/datasheet/2/215/005-5009-741293.pdf" H 4050 4000 50  0001 C CNN
-F 4 "5007" H 3850 4000 50  0001 C CNN "Manufacturer/Part Number"
-F 5 "Mouser 534-5007" H 3850 4000 50  0001 C CNN "Supplier Stock Code"
-	1    3850 4000
-	1    0    0    -1  
-$EndComp
 $Comp
 L frequencySynthesizer-rescue:TestPoint-frequencySintesizer TP1
 U 1 1 5FBBC038
-P 2950 4550
-F 0 "TP1" H 2892 4576 50  0000 R CNN
-F 1 "TestPoint" H 2892 4667 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Loop_D2.60mm_Drill1.6mm_Beaded" H 3150 4550 50  0001 C CNN
-F 3 "https://www.mouser.it/datasheet/2/215/005-5009-741293.pdf" H 3150 4550 50  0001 C CNN
-F 4 "5007" H 2950 4550 50  0001 C CNN "Manufacturer/Part Number"
-F 5 "Mouser 534-5007" H 2950 4550 50  0001 C CNN "Supplier Stock Code"
-	1    2950 4550
-	-1   0    0    1   
+P 3150 3450
+F 0 "TP1" H 3092 3476 50  0000 R CNN
+F 1 "TestPoint" H 3092 3567 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Loop_D2.60mm_Drill1.6mm_Beaded" H 3350 3450 50  0001 C CNN
+F 3 "https://www.mouser.it/datasheet/2/215/005-5009-741293.pdf" H 3350 3450 50  0001 C CNN
+F 4 "5007" H 3150 3450 50  0001 C CNN "Manufacturer/Part Number"
+F 5 "Mouser 534-5007" H 3150 3450 50  0001 C CNN "Supplier Stock Code"
+	1    3150 3450
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3850 4100 3850 4000
 Wire Wire Line
 	3850 4100 4700 4100
 Wire Wire Line
@@ -436,25 +411,17 @@ Wire Wire Line
 Wire Wire Line
 	4350 3400 4350 1700
 Wire Wire Line
-	4350 1700 3350 1700
-Wire Wire Line
 	4700 3500 4300 3500
 Wire Wire Line
 	4300 3500 4300 1800
-Wire Wire Line
-	4300 1800 3350 1800
 Wire Wire Line
 	4700 3600 4250 3600
 Wire Wire Line
 	4250 3600 4250 1900
 Wire Wire Line
-	4250 1900 3350 1900
-Wire Wire Line
 	4700 3800 4200 3800
 Wire Wire Line
 	4200 3800 4200 2000
-Wire Wire Line
-	4200 2000 3350 2000
 Wire Wire Line
 	4700 3900 4150 3900
 Wire Wire Line
@@ -637,8 +604,6 @@ F 3 "" H 6900 5150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5800 4800 5800 4900
-Wire Wire Line
-	3400 2750 4150 2750
 $Comp
 L Device:C C6
 U 1 1 5FBDFCAB
@@ -782,7 +747,7 @@ U 1 1 5FB4AD4B
 P 5400 4000
 F 0 "U1" H 5375 3111 50  0000 C CNN
 F 1 "ADF4150HV" H 5375 3020 50  0000 C CNN
-F 2 "Package_CSP:LFCSP-32-1EP_5x5mm_P0.5mm_EP3.25x3.25mm" H 5400 4000 50  0001 C CNN
+F 2 "Microwave_LO_Generator:LFCSP-32-1EP_5x5mm_P0.5mm_mod" H 5400 4000 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADF4150HV.pdf" H 5100 4000 50  0001 C CNN
 F 4 "ADF4150HVBCPZ" H 5400 4000 50  0001 C CNN "Manufacturer/Part Number"
 F 5 "Mouser 584-ADF4150HVBCPZ" H 5400 4000 50  0001 C CNN "Supplier Stock Code"
@@ -828,60 +793,35 @@ F 3 "~" H 3750 1600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3750 1500 3750 1600
-$Comp
-L Connector:Conn_01x05_Male J4
-U 1 1 5FCD328E
-P 3150 1800
-F 0 "J4" H 3258 2181 50  0000 C CNN
-F 1 "Conn_01x05_Male" H 3258 2090 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 3150 1800 50  0001 C CNN
-F 3 "~" H 3150 1800 50  0001 C CNN
-	1    3150 1800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3500 1500 3500 1600
-Wire Wire Line
-	3500 1600 3350 1600
 Wire Wire Line
 	3500 1500 3750 1500
 $Comp
 L Device:R R17
 U 1 1 5FD3B0E5
-P 3400 3000
-F 0 "R17" H 3470 3046 50  0000 L CNN
-F 1 "DNI" H 3470 2955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3330 3000 50  0001 C CNN
-F 3 "~" H 3400 3000 50  0001 C CNN
-F 4 "D/CRCW0402 kit in dipartimento" H 3400 3000 50  0001 C CNN "Supplier Stock Code"
-	1    3400 3000
+P 2700 3000
+F 0 "R17" H 2770 3046 50  0000 L CNN
+F 1 "DNI" H 2770 2955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 2630 3000 50  0001 C CNN
+F 3 "~" H 2700 3000 50  0001 C CNN
+F 4 "D/CRCW0402 kit in dipartimento" H 2700 3000 50  0001 C CNN "Supplier Stock Code"
+	1    2700 3000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3400 3150 3400 3300
+	2700 3150 2700 3300
 Wire Wire Line
-	3400 2750 3400 2850
-$Comp
-L Device:R R16
-U 1 1 5FD46A04
-P 3400 2600
-F 0 "R16" H 3470 2646 50  0000 L CNN
-F 1 "0" H 3470 2555 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 3330 2600 50  0001 C CNN
-F 3 "~" H 3400 2600 50  0001 C CNN
-F 4 "D/CRCW0402 kit in dipartimento" H 3400 2600 50  0001 C CNN "Supplier Stock Code"
-	1    3400 2600
-	1    0    0    -1  
-$EndComp
+	2700 2750 2700 2850
 $Comp
 L pspice:0 #GND0123
 U 1 1 5FD49CF4
-P 3400 3300
-F 0 "#GND0123" H 3400 3200 50  0001 C CNN
-F 1 "0" H 3400 3389 50  0000 C CNN
-F 2 "" H 3400 3300 50  0001 C CNN
-F 3 "~" H 3400 3300 50  0001 C CNN
-	1    3400 3300
+P 2700 3300
+F 0 "#GND0123" H 2700 3200 50  0001 C CNN
+F 1 "0" H 2700 3389 50  0000 C CNN
+F 2 "" H 2700 3300 50  0001 C CNN
+F 3 "~" H 2700 3300 50  0001 C CNN
+	1    2700 3300
 	1    0    0    -1  
 $EndComp
 Connection ~ 5250 2700
@@ -898,17 +838,170 @@ F 3 "" H 5250 2550 50  0001 C CNN
 	1    5250 2550
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2700 2300 2700 2400
 $Comp
 L power:+3.3V #PWR0138
 U 1 1 5FD4CD79
-P 3400 2300
-F 0 "#PWR0138" H 3400 2150 50  0001 C CNN
-F 1 "+3.3V" H 3415 2473 50  0000 C CNN
-F 2 "" H 3400 2300 50  0001 C CNN
-F 3 "" H 3400 2300 50  0001 C CNN
-	1    3400 2300
+P 2700 2300
+F 0 "#PWR0138" H 2700 2150 50  0001 C CNN
+F 1 "+3.3V" H 2715 2473 50  0000 C CNN
+F 2 "" H 2700 2300 50  0001 C CNN
+F 3 "" H 2700 2300 50  0001 C CNN
+	1    2700 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R16
+U 1 1 5FD46A04
+P 2700 2600
+F 0 "R16" H 2770 2646 50  0000 L CNN
+F 1 "0" H 2770 2555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 2630 2600 50  0001 C CNN
+F 3 "~" H 2700 2600 50  0001 C CNN
+F 4 "D/CRCW0402 kit in dipartimento" H 2700 2600 50  0001 C CNN "Supplier Stock Code"
+	1    2700 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x05_Male J4
+U 1 1 5FCD328E
+P 2750 1800
+F 0 "J4" H 2858 2181 50  0000 C CNN
+F 1 "Conn_01x05_Male" H 2858 2090 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 2750 1800 50  0001 C CNN
+F 3 "~" H 2750 1800 50  0001 C CNN
+	1    2750 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 5FCB72FC
+P 3000 2200
+F 0 "R10" H 3070 2246 50  0000 L CNN
+F 1 "10k" H 3070 2155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 2930 2200 50  0001 C CNN
+F 3 "~" H 3000 2200 50  0001 C CNN
+F 4 "D/CRCW0402 kit in dipartimento" H 3000 2200 50  0001 C CNN "Supplier Stock Code"
+	1    3000 2200
+	1    0    0    -1  
+$EndComp
+Connection ~ 2700 2750
+Wire Wire Line
+	3000 2050 3000 2000
+Wire Wire Line
+	3000 2350 3000 2400
+Wire Wire Line
+	3000 2400 2700 2400
+Connection ~ 2700 2400
+Wire Wire Line
+	2700 2400 2700 2450
+$Comp
+L Device:R R18
+U 1 1 5FCC84F5
+P 3250 2200
+F 0 "R18" H 3320 2246 50  0000 L CNN
+F 1 "10k" H 3320 2155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 3180 2200 50  0001 C CNN
+F 3 "~" H 3250 2200 50  0001 C CNN
+F 4 "D/CRCW0402 kit in dipartimento" H 3250 2200 50  0001 C CNN "Supplier Stock Code"
+	1    3250 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R19
+U 1 1 5FCCB177
+P 3500 2200
+F 0 "R19" H 3570 2246 50  0000 L CNN
+F 1 "10k" H 3570 2155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 3430 2200 50  0001 C CNN
+F 3 "~" H 3500 2200 50  0001 C CNN
+F 4 "D/CRCW0402 kit in dipartimento" H 3500 2200 50  0001 C CNN "Supplier Stock Code"
+	1    3500 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R20
+U 1 1 5FCCDA73
+P 3750 2200
+F 0 "R20" H 3820 2246 50  0000 L CNN
+F 1 "10k" H 3820 2155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 3680 2200 50  0001 C CNN
+F 3 "~" H 3750 2200 50  0001 C CNN
+F 4 "D/CRCW0402 kit in dipartimento" H 3750 2200 50  0001 C CNN "Supplier Stock Code"
+	1    3750 2200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3400 2300 3400 2450
+	3250 2050 3250 1900
+Wire Wire Line
+	3500 2050 3500 1800
+Wire Wire Line
+	2700 2750 4150 2750
+Wire Wire Line
+	2950 1600 3500 1600
+Wire Wire Line
+	2950 1700 3750 1700
+Wire Wire Line
+	2950 1800 3500 1800
+Wire Wire Line
+	2950 1900 3250 1900
+Wire Wire Line
+	2950 2000 3000 2000
+Connection ~ 3250 1900
+Wire Wire Line
+	3250 1900 4250 1900
+Connection ~ 3500 1800
+Connection ~ 3000 2000
+Wire Wire Line
+	3000 2000 4200 2000
+Wire Wire Line
+	3500 1800 4300 1800
+Wire Wire Line
+	3750 2050 3750 1700
+Connection ~ 3750 1700
+Wire Wire Line
+	3750 1700 4350 1700
+$Comp
+L pspice:0 #GND0130
+U 1 1 5FD1A641
+P 3250 2450
+F 0 "#GND0130" H 3250 2350 50  0001 C CNN
+F 1 "0" H 3250 2539 50  0000 C CNN
+F 2 "" H 3250 2450 50  0001 C CNN
+F 3 "~" H 3250 2450 50  0001 C CNN
+	1    3250 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:0 #GND0131
+U 1 1 5FD1AD97
+P 3500 2450
+F 0 "#GND0131" H 3500 2350 50  0001 C CNN
+F 1 "0" H 3500 2539 50  0000 C CNN
+F 2 "" H 3500 2450 50  0001 C CNN
+F 3 "~" H 3500 2450 50  0001 C CNN
+	1    3500 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:0 #GND0132
+U 1 1 5FD1AF60
+P 3750 2450
+F 0 "#GND0132" H 3750 2350 50  0001 C CNN
+F 1 "0" H 3750 2539 50  0000 C CNN
+F 2 "" H 3750 2450 50  0001 C CNN
+F 3 "~" H 3750 2450 50  0001 C CNN
+	1    3750 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 2450 3250 2350
+Wire Wire Line
+	3500 2450 3500 2350
+Wire Wire Line
+	3750 2450 3750 2350
+Wire Wire Line
+	3150 3450 3150 3550
+Connection ~ 3150 3550
 $EndSCHEMATC

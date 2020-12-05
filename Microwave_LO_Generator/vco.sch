@@ -16,17 +16,6 @@ $EndDescr
 Text GLabel 6200 1350 0    50   Input ~ 0
 CPout
 $Comp
-L HMC739LP4E:HMC739LP4E U4
-U 1 1 5FC5D2C1
-P 3200 1350
-F 0 "U4" H 4300 1737 60  0000 C CNN
-F 1 "HMC739LP4E" H 4300 1631 60  0000 C CNN
-F 2 "Microwave_LO_Generator:HMC739LP4E" H 4300 1590 60  0001 C CNN
-F 3 "" H 3200 1350 60  0000 C CNN
-	1    3200 1350
-	1    0    0    -1  
-$EndComp
-$Comp
 L pspice:0 #GND0115
 U 1 1 5FC6074F
 P 3000 2450
@@ -284,21 +273,8 @@ Wire Wire Line
 Connection ~ 1900 1650
 Wire Wire Line
 	1900 1650 1800 1650
-$Comp
-L Connector:Conn_01x01_Female J5
-U 1 1 5FC15527
-P 6450 2700
-F 0 "J5" H 6478 2726 50  0000 L CNN
-F 1 "Conn_01x01_Female" H 6478 2635 50  0000 L CNN
-F 2 "Microwave_LO_Generator:Connettore" H 6450 2700 50  0001 C CNN
-F 3 "~" H 6450 2700 50  0001 C CNN
-	1    6450 2700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5400 2150 6250 2150
-Wire Wire Line
-	6250 2150 6250 2700
 $Comp
 L power:GND #PWR?
 U 1 1 5FCBE930
@@ -320,7 +296,7 @@ AR Path="/5FBD30A7/5FCBE937" Ref="R?"  Part="1"
 AR Path="/5FC49510/5FCBE937" Ref="R9"  Part="1" 
 F 0 "R9" H 1970 3046 50  0000 L CNN
 F 1 "100r" H 1970 2955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" V 1830 3000 50  0001 C CNN
+F 2 "Microwave_LO_Generator:R_0201_0603_HandSolder_mod" V 1830 3000 50  0001 C CNN
 F 3 "~" H 1900 3000 50  0001 C CNN
 F 4 "D/CRCW0402 kit in dipartimento" H 1900 3000 50  0001 C CNN "Supplier Stock Code"
 	1    1900 3000
@@ -334,7 +310,7 @@ AR Path="/5FBD30A7/5FBFDBCE" Ref="R?"  Part="1"
 AR Path="/5FC49510/5FBFDBCE" Ref="R15"  Part="1" 
 F 0 "R15" H 2370 3046 50  0000 L CNN
 F 1 "100r" H 2370 2955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" V 2230 3000 50  0001 C CNN
+F 2 "Microwave_LO_Generator:R_0201_0603_HandSolder_mod" V 2230 3000 50  0001 C CNN
 F 3 "~" H 2300 3000 50  0001 C CNN
 F 4 "D/CRCW0402 kit in dipartimento" H 2300 3000 50  0001 C CNN "Supplier Stock Code"
 	1    2300 3000
@@ -354,17 +330,6 @@ F 3 "" H 2300 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x01_Female J3
-U 1 1 5FCC0BE0
-P 1100 2750
-F 0 "J3" H 1128 2776 50  0000 L CNN
-F 1 "Conn_01x01_Female" H 1128 2685 50  0000 L CNN
-F 2 "Microwave_LO_Generator:Connettore" H 1100 2750 50  0001 C CNN
-F 3 "~" H 1100 2750 50  0001 C CNN
-	1    1100 2750
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:R R?
 U 1 1 5FCC18F4
 P 1550 2750
@@ -372,14 +337,12 @@ AR Path="/5FBD30A7/5FCC18F4" Ref="R?"  Part="1"
 AR Path="/5FC49510/5FCC18F4" Ref="R7"  Part="1" 
 F 0 "R7" H 1620 2796 50  0000 L CNN
 F 1 "0r" H 1620 2705 50  0000 L CNN
-F 2 "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder" V 1480 2750 50  0001 C CNN
+F 2 "Microwave_LO_Generator:R_0201_0603_HandSolder_mod" V 1480 2750 50  0001 C CNN
 F 3 "~" H 1550 2750 50  0001 C CNN
 F 4 "D/CRCW0402 kit in dipartimento" H 1550 2750 50  0001 C CNN "Supplier Stock Code"
 	1    1550 2750
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	1300 2750 1400 2750
 Wire Wire Line
 	1900 2750 1900 2850
 Wire Wire Line
@@ -394,4 +357,73 @@ Wire Wire Line
 Wire Wire Line
 	2300 2250 3200 2250
 Connection ~ 2300 2750
+$Comp
+L Connector:Conn_01x02_Female J5
+U 1 1 5FD32409
+P 6700 2700
+F 0 "J5" H 6728 2676 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 6728 2585 50  0000 L CNN
+F 2 "Microwave_LO_Generator:Connettore" H 6700 2700 50  0001 C CNN
+F 3 "~" H 6700 2700 50  0001 C CNN
+	1    6700 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 2150 6250 2700
+$Comp
+L HMC739LP4E:HMC739LP4E U4
+U 1 1 5FC5D2C1
+P 3200 1350
+F 0 "U4" H 4300 1737 60  0000 C CNN
+F 1 "HMC739LP4E" H 4300 1631 60  0000 C CNN
+F 2 "Microwave_LO_Generator:QFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm_ThermalVias_mod" H 4300 1590 60  0001 C CNN
+F 3 "" H 3200 1350 60  0000 C CNN
+	1    3200 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 2700 6250 2700
+$Comp
+L pspice:0 #GND0133
+U 1 1 5FD369C2
+P 6400 2900
+F 0 "#GND0133" H 6400 2800 50  0001 C CNN
+F 1 "0" H 6400 2989 50  0000 C CNN
+F 2 "" H 6400 2900 50  0001 C CNN
+F 3 "~" H 6400 2900 50  0001 C CNN
+	1    6400 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 2900 6400 2800
+Wire Wire Line
+	6400 2800 6500 2800
+$Comp
+L Connector:Conn_01x02_Female J3
+U 1 1 5FD37D90
+P 1050 2750
+F 0 "J3" H 1078 2726 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 1078 2635 50  0000 L CNN
+F 2 "Microwave_LO_Generator:Connettore" H 1050 2750 50  0001 C CNN
+F 3 "~" H 1050 2750 50  0001 C CNN
+	1    1050 2750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 2750 1400 2750
+$Comp
+L pspice:0 #GND0134
+U 1 1 5FD3BA64
+P 1300 2950
+F 0 "#GND0134" H 1300 2850 50  0001 C CNN
+F 1 "0" H 1300 3039 50  0000 C CNN
+F 2 "" H 1300 2950 50  0001 C CNN
+F 3 "~" H 1300 2950 50  0001 C CNN
+	1    1300 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 2850 1300 2950
+Wire Wire Line
+	1250 2850 1300 2850
 $EndSCHEMATC

@@ -158,18 +158,16 @@ Wire Wire Line
 $Comp
 L power:+9V #PWR0129
 U 1 1 5FC0B368
-P 5150 3650
-F 0 "#PWR0129" H 5150 3500 50  0001 C CNN
-F 1 "+9V" H 5165 3823 50  0000 C CNN
-F 2 "" H 5150 3650 50  0001 C CNN
-F 3 "" H 5150 3650 50  0001 C CNN
-	1    5150 3650
+P 5350 3650
+F 0 "#PWR0129" H 5350 3500 50  0001 C CNN
+F 1 "+9V" H 5365 3823 50  0000 C CNN
+F 2 "" H 5350 3650 50  0001 C CNN
+F 3 "" H 5350 3650 50  0001 C CNN
+	1    5350 3650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4900 3700 5150 3700
-Wire Wire Line
-	5150 3700 5150 3650
+	5350 3700 5350 3650
 $Comp
 L Device:C C?
 U 1 1 5FC10CCE
@@ -938,31 +936,132 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x02_Male J2
 U 1 1 5FDB237F
-P 6250 1600
-F 0 "J2" H 6358 1781 50  0000 C CNN
-F 1 "Conn_01x02_Male" H 6358 1690 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6250 1600 50  0001 C CNN
-F 3 "~" H 6250 1600 50  0001 C CNN
-	1    6250 1600
+P 5550 1600
+F 0 "J2" H 5658 1781 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 5658 1690 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5550 1600 50  0001 C CNN
+F 3 "~" H 5550 1600 50  0001 C CNN
+	1    5550 1600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6450 1600 6800 1600
 Wire Wire Line
 	6800 1600 6800 3200
 $Comp
 L pspice:0 #GND0129
 U 1 1 5FDBD0D5
-P 6550 1850
-F 0 "#GND0129" H 6550 1750 50  0001 C CNN
-F 1 "0" H 6550 1939 50  0000 C CNN
-F 2 "" H 6550 1850 50  0001 C CNN
-F 3 "~" H 6550 1850 50  0001 C CNN
-	1    6550 1850
+P 5850 1850
+F 0 "#GND0129" H 5850 1750 50  0001 C CNN
+F 1 "0" H 5850 1939 50  0000 C CNN
+F 2 "" H 5850 1850 50  0001 C CNN
+F 3 "~" H 5850 1850 50  0001 C CNN
+	1    5850 1850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6550 1850 6550 1700
+	5850 1850 5850 1700
 Wire Wire Line
-	6550 1700 6450 1700
+	5850 1700 5750 1700
+$Comp
+L frequencySynthesizer-rescue:TestPoint-frequencySintesizer TP?
+U 1 1 5FDAD9C9
+P 4900 3600
+AR Path="/5FBD30A7/5FDAD9C9" Ref="TP?"  Part="1" 
+AR Path="/5FBD5B32/5FDAD9C9" Ref="TP3"  Part="1" 
+F 0 "TP3" H 4958 3718 50  0000 L CNN
+F 1 "TestPoint" H 4958 3627 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Loop_D2.60mm_Drill1.6mm_Beaded" H 5100 3600 50  0001 C CNN
+F 3 "https://www.mouser.it/datasheet/2/215/005-5009-741293.pdf" H 5100 3600 50  0001 C CNN
+F 4 "5007" H 4900 3600 50  0001 C CNN "Manufacturer/Part Number"
+F 5 "Mouser 534-5007" H 4900 3600 50  0001 C CNN "Supplier Stock Code"
+	1    4900 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L frequencySynthesizer-rescue:TestPoint-frequencySintesizer TP?
+U 1 1 5FDB1936
+P 10250 1500
+AR Path="/5FBD30A7/5FDB1936" Ref="TP?"  Part="1" 
+AR Path="/5FBD5B32/5FDB1936" Ref="TP6"  Part="1" 
+F 0 "TP6" H 10308 1618 50  0000 L CNN
+F 1 "TestPoint" H 10308 1527 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Loop_D2.60mm_Drill1.6mm_Beaded" H 10450 1500 50  0001 C CNN
+F 3 "https://www.mouser.it/datasheet/2/215/005-5009-741293.pdf" H 10450 1500 50  0001 C CNN
+F 4 "5007" H 10250 1500 50  0001 C CNN "Manufacturer/Part Number"
+F 5 "Mouser 534-5007" H 10250 1500 50  0001 C CNN "Supplier Stock Code"
+	1    10250 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L frequencySynthesizer-rescue:TestPoint-frequencySintesizer TP?
+U 1 1 5FDB5D55
+P 9900 3100
+AR Path="/5FBD30A7/5FDB5D55" Ref="TP?"  Part="1" 
+AR Path="/5FBD5B32/5FDB5D55" Ref="TP4"  Part="1" 
+F 0 "TP4" H 9958 3218 50  0000 L CNN
+F 1 "TestPoint" H 9958 3127 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Loop_D2.60mm_Drill1.6mm_Beaded" H 10100 3100 50  0001 C CNN
+F 3 "https://www.mouser.it/datasheet/2/215/005-5009-741293.pdf" H 10100 3100 50  0001 C CNN
+F 4 "5007" H 9900 3100 50  0001 C CNN "Manufacturer/Part Number"
+F 5 "Mouser 534-5007" H 9900 3100 50  0001 C CNN "Supplier Stock Code"
+	1    9900 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L frequencySynthesizer-rescue:TestPoint-frequencySintesizer TP?
+U 1 1 5FDB9CE2
+P 9900 4400
+AR Path="/5FBD30A7/5FDB9CE2" Ref="TP?"  Part="1" 
+AR Path="/5FBD5B32/5FDB9CE2" Ref="TP5"  Part="1" 
+F 0 "TP5" H 9958 4518 50  0000 L CNN
+F 1 "TestPoint" H 9958 4427 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Loop_D2.60mm_Drill1.6mm_Beaded" H 10100 4400 50  0001 C CNN
+F 3 "https://www.mouser.it/datasheet/2/215/005-5009-741293.pdf" H 10100 4400 50  0001 C CNN
+F 4 "5007" H 9900 4400 50  0001 C CNN "Manufacturer/Part Number"
+F 5 "Mouser 534-5007" H 9900 4400 50  0001 C CNN "Supplier Stock Code"
+	1    9900 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 3600 4900 3700
+Wire Wire Line
+	4900 3700 5350 3700
+Wire Wire Line
+	10250 1500 10250 1600
+Wire Wire Line
+	9900 3100 9900 3200
+Wire Wire Line
+	9900 4400 9900 4500
+$Comp
+L pspice:DIODE D?
+U 1 1 5FE480F6
+P 6300 1850
+AR Path="/5FBD30A7/5FBFBF42/5FE480F6" Ref="D?"  Part="1" 
+AR Path="/5FBD5B32/5FE480F6" Ref="D?"  Part="1" 
+F 0 "D?" V 6346 1722 50  0000 R CNN
+F 1 "DIODE" V 6255 1722 50  0000 R CNN
+F 2 "Diode_SMD:D_MELF" H 6300 1850 50  0001 C CNN
+F 3 "~" H 6300 1850 50  0001 C CNN
+	1    6300 1850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5750 1600 6300 1600
+Wire Wire Line
+	6300 1650 6300 1600
+Connection ~ 6300 1600
+Wire Wire Line
+	6300 1600 6800 1600
+$Comp
+L pspice:0 #GND?
+U 1 1 5FE58A98
+P 6300 2300
+F 0 "#GND?" H 6300 2200 50  0001 C CNN
+F 1 "0" H 6300 2389 50  0000 C CNN
+F 2 "" H 6300 2300 50  0001 C CNN
+F 3 "~" H 6300 2300 50  0001 C CNN
+	1    6300 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 2050 6300 2300
 $EndSCHEMATC
