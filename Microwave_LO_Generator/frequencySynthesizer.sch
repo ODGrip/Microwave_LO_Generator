@@ -797,33 +797,6 @@ Wire Wire Line
 	3500 1500 3500 1600
 Wire Wire Line
 	3500 1500 3750 1500
-$Comp
-L Device:R R17
-U 1 1 5FD3B0E5
-P 2700 3000
-F 0 "R17" H 2770 3046 50  0000 L CNN
-F 1 "DNI" H 2770 2955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 2630 3000 50  0001 C CNN
-F 3 "~" H 2700 3000 50  0001 C CNN
-F 4 "D/CRCW0402 kit in dipartimento" H 2700 3000 50  0001 C CNN "Supplier Stock Code"
-	1    2700 3000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2700 3150 2700 3300
-Wire Wire Line
-	2700 2750 2700 2850
-$Comp
-L pspice:0 #GND0123
-U 1 1 5FD49CF4
-P 2700 3300
-F 0 "#GND0123" H 2700 3200 50  0001 C CNN
-F 1 "0" H 2700 3389 50  0000 C CNN
-F 2 "" H 2700 3300 50  0001 C CNN
-F 3 "~" H 2700 3300 50  0001 C CNN
-	1    2700 3300
-	1    0    0    -1  
-$EndComp
 Connection ~ 5250 2700
 Wire Wire Line
 	5250 2550 5250 2700
@@ -886,7 +859,6 @@ F 4 "D/CRCW0402 kit in dipartimento" H 3000 2200 50  0001 C CNN "Supplier Stock 
 	1    3000 2200
 	1    0    0    -1  
 $EndComp
-Connection ~ 2700 2750
 Wire Wire Line
 	3000 2050 3000 2000
 Wire Wire Line
