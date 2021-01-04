@@ -825,18 +825,6 @@ F 3 "" H 2700 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R16
-U 1 1 5FD46A04
-P 2700 2600
-F 0 "R16" H 2770 2646 50  0000 L CNN
-F 1 "0" H 2770 2555 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 2630 2600 50  0001 C CNN
-F 3 "~" H 2700 2600 50  0001 C CNN
-F 4 "D/CRCW0402 kit in dipartimento" H 2700 2600 50  0001 C CNN "Supplier Stock Code"
-	1    2700 2600
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:Conn_01x05_Male J4
 U 1 1 5FCD328E
 P 2750 1800
@@ -866,8 +854,6 @@ Wire Wire Line
 Wire Wire Line
 	3000 2400 2700 2400
 Connection ~ 2700 2400
-Wire Wire Line
-	2700 2400 2700 2450
 $Comp
 L Device:R R18
 U 1 1 5FCC84F5
@@ -976,4 +962,6 @@ Wire Wire Line
 Wire Wire Line
 	3150 3450 3150 3550
 Connection ~ 3150 3550
+Wire Wire Line
+	2700 2400 2700 2750
 $EndSCHEMATC
