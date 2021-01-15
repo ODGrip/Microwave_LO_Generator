@@ -322,7 +322,7 @@ U 1 1 5FD32409
 P 6700 2700
 F 0 "J5" H 6728 2676 50  0000 L CNN
 F 1 "Conn_01x02_Female" H 6728 2585 50  0000 L CNN
-F 2 "Microwave_LO_Generator:Connettore" H 6700 2700 50  0001 C CNN
+F 2 "Microwave_LO_Generator:Connettore_largo" H 6700 2700 50  0001 C CNN
 F 3 "~" H 6700 2700 50  0001 C CNN
 	1    6700 2700
 	1    0    0    -1  
@@ -365,7 +365,7 @@ U 1 1 5FD37D90
 P 1050 2750
 F 0 "J4" H 1078 2726 50  0000 L CNN
 F 1 "Conn_01x02_Female" H 1078 2635 50  0000 L CNN
-F 2 "Microwave_LO_Generator:Connettore" H 1050 2750 50  0001 C CNN
+F 2 "Microwave_LO_Generator:Connettore_largo" H 1050 2750 50  0001 C CNN
 F 3 "~" H 1050 2750 50  0001 C CNN
 	1    1050 2750
 	-1   0    0    -1  
