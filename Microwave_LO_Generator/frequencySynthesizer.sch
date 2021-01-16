@@ -241,7 +241,7 @@ U 1 1 5FB963B3
 P 2200 3550
 F 0 "X1" H 2544 3596 50  0000 L CNN
 F 1 "IQXT-220-1" H 2544 3505 50  0000 L CNN
-F 2 "Oscillator:Oscillator_SMD_Abracon_ASE-4Pin_3.2x2.5mm_HandSoldering" H 2200 3550 50  0001 C CNN
+F 2 "Microwave_LO_Generator:Oscillator_SMD_Abracon_ASE-4Pin_3.2x2.5mm_HandSoldering" H 2200 3550 50  0001 C CNN
 F 3 "https://www.mouser.it/datasheet/2/741/LFTCXO075792Cutt-1115708.pdf" H 2200 3550 50  0001 C CNN
 F 4 "IQXT-220-1" H 2200 3550 50  0001 C CNN "Manufacturer/Part Number"
 F 5 "LFTCXO075792Cutt" H 2200 3550 50  0001 C CNN "Supplier Stock Code"
@@ -399,7 +399,7 @@ U 1 1 5FBBC038
 P 3150 3450
 F 0 "TP1" H 3092 3476 50  0000 R CNN
 F 1 "TestPoint" H 3092 3567 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Loop_D2.60mm_Drill1.6mm_Beaded" H 3350 3450 50  0001 C CNN
+F 2 "Microwave_LO_Generator:TestPoint_Loop_D2.60mm_Drill1.6mm_Beaded" H 3350 3450 50  0001 C CNN
 F 3 "https://www.mouser.it/datasheet/2/215/005-5009-741293.pdf" H 3350 3450 50  0001 C CNN
 F 4 "5007" H 3150 3450 50  0001 C CNN "Manufacturer/Part Number"
 F 5 "Mouser 534-5007" H 3150 3450 50  0001 C CNN "Supplier Stock Code"
@@ -832,7 +832,7 @@ U 1 1 5FCD328E
 P 2750 1800
 F 0 "J1" H 2858 2181 50  0000 C CNN
 F 1 "Conn_01x05_Male" H 2858 2090 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 2750 1800 50  0001 C CNN
+F 2 "Microwave_LO_Generator:PinHeader_1x05_P2.54mm_Vertical" H 2750 1800 50  0001 C CNN
 F 3 "~" H 2750 1800 50  0001 C CNN
 	1    2750 1800
 	1    0    0    -1  

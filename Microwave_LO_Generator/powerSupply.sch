@@ -452,7 +452,7 @@ U 1 1 5FCADF3B
 P 8800 3400
 F 0 "U4" H 8800 3867 50  0000 C CNN
 F 1 "LT1962-5" H 8800 3776 50  0000 C CNN
-F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 8800 3050 50  0001 C CNN
+F 2 "Microwave_LO_Generator:MSOP-8_3x3mm_P0.65mm" H 8800 3050 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/1962fb.pdf" H 8800 2850 50  0001 C CNN
 F 4 "LT1962EMS8-5#PBF" H 8800 3400 50  0001 C CNN "Manufacturer/Part Number"
 F 5 "584-LT1962EMS8-5#PBF" H 8800 3400 50  0001 C CNN "Supplier Stock Code"
@@ -480,7 +480,7 @@ U 1 1 5FC7F7B2
 P 8700 1800
 F 0 "U3" H 8700 2267 50  0000 C CNN
 F 1 "LT1962-3.3" H 8700 2176 50  0000 C CNN
-F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 8700 1450 50  0001 C CNN
+F 2 "Microwave_LO_Generator:MSOP-8_3x3mm_P0.65mm" H 8700 1450 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/1962fb.pdf" H 8700 1250 50  0001 C CNN
 F 4 "LT1962EMS8-3.3#PBF" H 8700 1800 50  0001 C CNN "Manufacturer/Part Number"
 F 5 "584-1962EMS8-3.3PBF" H 8700 1800 50  0001 C CNN "Supplier Stock Code"
@@ -651,7 +651,7 @@ U 1 1 5FD08653
 P 8800 4700
 F 0 "U5" H 8800 5167 50  0000 C CNN
 F 1 "LT1962-5" H 8800 5076 50  0000 C CNN
-F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 8800 4350 50  0001 C CNN
+F 2 "Microwave_LO_Generator:MSOP-8_3x3mm_P0.65mm" H 8800 4350 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/1962fb.pdf" H 8800 4150 50  0001 C CNN
 F 4 "LT1962EMS8-5#PBF" H 8800 4700 50  0001 C CNN "Manufacturer/Part Number"
 F 5 "584-LT1962EMS8-5#PBF" H 8800 4700 50  0001 C CNN "Supplier Stock Code"
@@ -827,7 +827,7 @@ U 1 1 5FCAC58C
 P 3250 3800
 F 0 "U2" H 3250 4167 50  0000 C CNN
 F 1 "LT3010" H 3250 4076 50  0000 C CNN
-F 2 "Package_SO:MSOP-8-1EP_3x3mm_P0.65mm_EP1.68x1.88mm" H 3250 4125 50  0001 C CNN
+F 2 "Microwave_LO_Generator:MSOP-8-1EP_3x3mm_P0.65mm_EP1.68x1.88mm" H 3250 4125 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/30105fe.pdf" H 3250 3800 50  0001 C CNN
 F 4 "LT3010EMS8E#PBF" H 3250 3800 50  0001 C CNN "Manufacturer/Part Number"
 F 5 "584-LT3010EMS8E#PBF" H 3250 3800 50  0001 C CNN "Supplier Stock Code"
